@@ -1,11 +1,11 @@
 //Leitura de arquivo
 #include <stdio.h>
 #include <stdlib.h>
+//  ==========                 ==========
+//  ========== #helpdeskloback ==========
+//  ==========                 ==========
 int main(void)
 {
-
-  
-
   // declaração de um ponteiro 	
   FILE *pont_arq;
 

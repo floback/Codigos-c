@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+//  ==========                 ==========
+//  ========== #helpdeskloback ==========
+//  ==========                 ==========
 int main(void)
 {
   // criando a variável ponteiro para o arquivo
@@ -9,7 +13,7 @@ int main(void)
   //abrindo o arquivo
   //pont_arq = fopen
   //a: Permissão para abrir um arquivo texto para escrita(gravação), permite acrescentar novos dados ao final do arquivo. Caso não exista, ele será criado.
-  pont_arq = fopen("/home/user/Documentos/configuraçõesDevOps/Arquivo01.txt", "a");
+  pont_arq = fopen("Arquivo01.txt", "a");
   
   if (pont_arq == NULL)
   {
