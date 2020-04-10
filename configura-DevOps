@@ -1,0 +1,52 @@
+Passo a Passo laboratórioDevOps
+
+1-Instale o git
+ Abra o terminal cono administrador
+$ sudo su
+Siga este comandos
+$ apt update ou yum update
+$ apt upgrade ou yum upgrade
+$ apt-get install git-all ou yum install git-all
+
+2-Crie conta nas plataformas
+GitHub
+Travis CI
+Heroku
+
+1.1-Conectando o diretório do projeto ao GitHub
+Abra o terminal, nesta fase de comandos, iremos conectar o diretório local ao projeto no git.
+Navegue até o diretório Pai do projeto
+
+1.1-Inicialize o diretório local como um repositório Git execute o comando.
+$ git init
+# Saida Initialized empty Git repository in (diretorio)
+
+1.2- Adicione os emails, usuário execute os dois comandos.
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "Your Name"
+
+1.3-No Terminal, adicione a URL para o repositório remote onde será feito push do seu repositório local.
+$ git remote add origin remote repository URL
+# Define o novo remote
+$ git remote -v
+# Verifica a nova URL remota
+
+OBS:REALIZADO OS PASSOS 1.1 AO 1.3, NÃO PRECISA MAIS EXECUTAR ESTES APENAS OS 1.4 A0 1.6
+1.4-Adicione os arquivos ao novo repositório local. Isso faz stage deles para o primeiro     commit.
+$ git add (nome do arquivo)
+Ou 
+$ git add --all (vai exportados)
+# Adiciona os arquivos no repositório local e faz stage deles para commit. Para remover     o stage de um arquivo, use "git reset HEAD YOUR-FILE".
+
+1.5-Faça commit dos arquivos com stage em seu repositório local execute este comando
+$ git commit -m "Update Commit"
+# Faz commit das alterações controladas e as prepara para o push em um repositório remote. Para remover esse commit e modificar o arquivo, use "git reset --soft HEAD~1", faça o     commit e adicione o arquivo novamente    .
+
+1.6-Faça push das alterações no seu repositório local para o GitHub.
+$ git push -u origin master
+#Em casos de erro como este 
+error: failed to push some refs to 'https://github.com/...'
+Execute este comando
+$ git push -u origin master --force
+# Faz push das alterações no seu repositório local até o repositório remote especificado como a origem
+
