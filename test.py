@@ -19,7 +19,7 @@ class Test(unittest.TestCase):
         result = self.app.get('/') 
 
         # verifica o retorno do conteudo da pagina
-        self.assertRegex(result.data.decode(), ("CODIFICAR RERRAMENTAS EM C!")
+        self.assertRegex(result.data.decode(), ("CODIFICAR FERRAMENTAS EM C!")
 
 
 if __name__ == "__main__":
