@@ -1,0 +1,11 @@
+-transforma essa pasta em repositório
+git init
+-Adicionando uma origin
+git remote add origin git@github.com:floback/Codigos-c.git
+- enviando especificando o envio
+git add (nome do arquivo) ou git add --all
+Comitando
+git commit -m "Update Commit"
+enviando
+git push -u origin master --force
+
